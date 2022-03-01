@@ -5,7 +5,7 @@ const navBackground=document.getElementById('nav__menu__container');
 const navLink=document.querySelectorAll('.nav__link')
 const navHeader=document.getElementById('header')
 const navTopBtn=document.getElementById('top-btn')
-if(navToggle){
+if(navToggle){ 
     navToggle.addEventListener('click',()=>{
         navMenu.classList.add('show-menu')
         navBackground.classList.add('show-background')

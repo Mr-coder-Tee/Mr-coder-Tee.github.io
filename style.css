@@ -271,7 +271,7 @@ img{
 .socail__icons__container{
     position: absolute;
     left: 0;
-    top: 20%;
+    top: 10%;
     padding: 0 10px;
 }
 .icons__items__container{
@@ -297,7 +297,7 @@ img{
 
 /* -- ----------Skills--------- -- */
 .skills__section{
-    background-color: rgba(0,0,0,.02);
+    background-color: rgba(0,0,0,.05);
 }
 .skills__card__icon__container{
     
@@ -338,6 +338,126 @@ img{
 .skills__section{
     padding: 0 10px;
 }
+.tool__name__percent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.language__container{
+    margin-top: var(--mb-0-75);
+    margin-bottom: var(--mb-0-75);
+    
+}
+.skills_specialities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.percent_bar{
+    width: 100%;
+    background-color: gray;
+    height: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.percent__python{
+    height: 100%;
+    width: 67%;
+    background-color: var(--first-color);
+}
+.percent__java{
+    height: 100%;
+    width: 80%;
+    background-color: var(--first-color);
+}
+.percent__csharp{
+    height: 100%;
+    width: 70%;
+    background-color: var(--first-color);
+}
+.percent__cpp{
+    height: 100%;
+    width: 60%;
+    background-color: var(--first-color);
+}
+.percent__javacript{
+    height: 100%;
+    width: 75%;
+    background-color: var(--first-color);
+}
+.percent__rn{
+    height: 100%;
+    width: 75%;
+    background-color: var(--first-color);
+}
+.percent__xamarin{
+    height: 100%;
+    width: 75%;
+    background-color: var(--first-color);
+}
+.skills_specialities_card{
+    background-color:white;
+    margin-top:var(--mb-1-5);
+    margin-bottom:var(--mb-1-5);
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 250ms ease-in-out;
+    justify-self: center;
+}
+.skills__item{
+    display: flex;
+    align-items: center;
+}
+
+
+/* -- ----------Project--------- -- */
+.project__section section{
+    background-color: rgba(0,0,0,.05);
+    padding: 0 10px;
+}
+.project__section__card{
+    background-color:white;
+    margin-top:var(--mb-1-5);
+    margin-bottom:var(--mb-1-5);
+    width: 70%;
+    height: 350px;
+    border-radius: 10px;
+    transition: 250ms ease-in-out;
+    justify-self: center;
+    overflow: hidden;
+}
+.project__section__container{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.project__section__image__container{
+    height: 70%;
+    background-color: red;
+}
+.project__section__content__info{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.project__tools{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tools__text{
+    background-color: var(--first-color);
+    color: var(--first-color-light);
+    margin-right: var(--mb-0-5);
+    padding: 0 var(--mb-0-5);
+    border-radius: 10px;
+    min-width: 100px;
+    margin-top: var(--mb-0-5);
+}
 @media screen and (min-width: 980px) {
     /* large devices */
     :root{
@@ -364,6 +484,7 @@ img{
     .skills__section{
         padding: 0 10px;
     }
+    
   }
 @media screen and (max-width: 991px) {
   /* start of large tablet styles */
