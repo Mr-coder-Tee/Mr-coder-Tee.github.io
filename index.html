@@ -13,9 +13,10 @@
     <script
       src="https://kit.fontawesome.com/82e199e86a.js"
       crossorigin="anonymous"
-    ></script> 
+    ></script>
   </head>
-  <body>
+  <!-- class="dark-theme" -->
+  <body  class="dark-theme">
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">Terrence Manaka</a>
@@ -39,13 +40,13 @@
                   <span class="material-icons nav__icons">
                     developer_mode
                   </span>
-                  Project
+                  Projects/Portfolio
                 </a>
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">
                   <span class="material-icons nav__icons"> article </span>
-                  Portfolio
+                Download CV
                 </a>
               </li>
               <li class="nav__item">
@@ -63,6 +64,8 @@
           </div>
         </div>
         <div class="nav__btns">
+          <i class="fa fa-moon-o change-theme" aria-hidden="true"></i>
+          <i class="fa fa-sun-o change-theme" aria-hidden="true"></i>
           <div class="nav__toggle" id="nav-toggle">
             <span class="material-icons"> menu </span>
           </div>
@@ -168,7 +171,9 @@
           </div>
           <div class="skills__card">
             <div class="skills__card__icon__container">
-              <div class="icon"><i class="fa fa-database" aria-hidden="true"></i></div>
+              <div class="icon">
+                <i class="fa fa-database" aria-hidden="true"></i>
+              </div>
             </div>
             <h4 class="sectioin__subtitle">Backend</h4>
             <ul class="skills__list">
@@ -204,7 +209,7 @@
               </li>
             </ul>
           </div>
-        </div>  
+        </div>
         <div class="skills_specialities">
           <div class="skills_specialities_card">
             <h3>Programming Languages</h3>
@@ -276,8 +281,6 @@
               </div>
             </div>
           </div>
-
-
 
           <div class="skills_specialities_card">
             <h3>Tools and IDES</h3>
@@ -362,29 +365,189 @@
         <div class="project__section__container">
           <div class="project__section__card">
             <div class="project__section__image__container">
-              <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"/>
-              <!-- image and hover info -->
+              <!-- ------slider imgs------ -->
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img
+                  src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                />
+                <div class="text">Caption Text</div>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img
+                  src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                />
+                <div class="text">Caption Text</div>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img
+                  src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                />
+                <div class="text">Caption Text</div>
+
+              </div>
+
+              <!-- --paragraph-- -->
+              <div class="project__description">
+                <p>project paragrah</p>
+              </div>
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <div class="dot__container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
             </div>
             <div class="project__section__content__info">
               <h4 class="project__section__section__title">Project name</h4>
               <div class="project__tools">
-                <div class="tools__text"> <p>React Native</p></div>
-                <div class="tools__text"> <p>FireBase</p></div>
-                <div class="tools__text"> <p>commers js</p></div>
-                <div class="tools__text"> <p>commers js</p></div>
-                <div class="tools__text"> <p>commers js</p></div>
-                <div class="tools__text"> <p>commers js</p></div>
+                <div class="tools__text"><p>React Native</p></div>
+                <div class="tools__text"><p>FireBase</p></div>
+                <div class="tools__text"><p>commers js</p></div>
+                <div class="tools__text"><p>commers js</p></div>
+                <div class="tools__text"><p>commers js</p></div>
+                <div class="tools__text"><p>commers js</p></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- ----------Portfolio--------- -->
+      <!-- ----------qulification--------- -->
+      <div class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div class="qualification__button button--flex qulification_active" data-target="#education">
+              <span class="material-icons qualification__icon">
+                school
+                </span>
+                Education
+            </div>
+            <div class="qualification__button button--flex" data-target="#work">
+              <span class="material-icons qualification__icon">
+                work
+                </span>
+                Work
+            </div>
+          </div>
+          <div class="qualification__sections">
+
+            <div class="qualification__content qulification_active" data-content id="education">
+
+              <div class="qualification__data">
+                <h3 class="qualification__title">
+                  NSC
+                </h3>
+                <span class="qualifcation__subtitle">Makgofe High School</span>
+                <div class="qulification__calendar">
+                  <span class="material-icons">
+                    calendar_month
+                    </span>
+                    2014
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <h3 class="qualification__title">
+                  Computer Science
+                </h3>
+                <span class="qualifcation__subtitle">University of Limpopo</span>
+                <div class="qulification__calendar">
+                  <span class="material-icons">
+                    calendar_month
+                    </span>
+                    2016-2019
+                </div>
+              </div>
+
+              
+            </div>
+            <!-- --------work-------- -->
+            <div class="qualification__content " data-content id="work">
+
+              <div class="qualification__data">
+                <h3 class="qualification__title">
+                  Developer
+                </h3>
+                <span class="qualifcation__subtitle">Mlab CodeTride</span>
+                <div class="qulification__calendar">
+                  <span class="material-icons">
+                    calendar_month
+                    </span>
+                    June 2021-March 2022
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
       <!-- ----------Contact--------- -->
+      <div class="contact section" id="contact">
+        <h2 class="section__title">
+          Contact Me
+        </h2>
+        <span class="section__subtitle">
+          Get in touch
+        </span>
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <span class="material-icons">
+                call
+                </span>
+                <div>
+                  <h3 class="contact__title">
+                    Call Me
+                  </h3>
+                  <span class="contact__subtitle">
+                    +27 766 166 822
+                  </span>
+                </div>
+            </div>
+            <div class="contact__information">
+              <span class="material-icons">
+                email
+                </span>
+                <div>
+                  <h3 class="contact__title">
+                    Email at
+                  </h3>
+                  <span class="contact__subtitle">
+                    tebatsoterrence.manaka@gmail.com
+                  </span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__bg">footer</div>
+      </footer>
+      
     </main>
     <div class="to__top__btn" id="top-btn">
       <span class="material-icons"> north </span>
     </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
