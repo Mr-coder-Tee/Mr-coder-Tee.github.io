@@ -185,7 +185,7 @@ body.dark-theme{
   .about__section{
     justify-content: space-around;
 }
-.skills_card_items_container{
+.skills_card_items_container,.skills_specialities{
     width: 100%;
 }
 }
@@ -370,7 +370,7 @@ body.dark-theme{
     flex-direction: column;
     justify-self: center;
     align-items: center;
-    
+    min-width: 50%;
 }
 .skills__section{
     padding: 0 10px;
@@ -390,6 +390,7 @@ body.dark-theme{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 50%;
 }
 .percent_bar{
     width: 100%;
@@ -751,7 +752,6 @@ display: none;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-       
     }
     .qualification{
         display: flex;
