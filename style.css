@@ -2,7 +2,7 @@
 :root{
      /*----------color----------*/
     --header-height:3rem;
-    --hue-color:230;
+    --hue-color:0;
     --first-color:hsl(var(--hue-color),69%,61%);
     --first-color-second:hsl(var(--hue-color),69%,61%);
     --first-color-alt:hsl(var(--hue-color),57%,53%);
@@ -404,6 +404,26 @@ body.dark-theme{
     width: 67%;
     background-color: var(--first-color);
 }
+.percent__mongoo{
+    height: 100%;
+    width: 95%;
+    background-color: var(--first-color);
+}
+.percent__spboot{
+    height: 100%;
+    width: 70%;
+    background-color: var(--first-color);
+}
+.percent__bootStrap{
+    height: 100%;
+    width: 90%;
+    background-color: var(--first-color);
+}
+.percent__mysql{
+    height: 100%;
+    width: 85%;
+    background-color: var(--first-color);
+}
 .percent__java{
     height: 100%;
     width: 80%;
@@ -431,7 +451,7 @@ body.dark-theme{
 }
 .percent__xamarin{
     height: 100%;
-    width: 75%;
+    width: 55%;
     background-color: var(--first-color);
 }
 .skills_specialities_card{
@@ -611,7 +631,23 @@ body.dark-theme{
     transition: 250ms ease-in-out;
     
 }
-
+.project__description h4{
+    color: var(--first-color-light);
+    margin-top: 10px;
+}
+.project__links__btn{
+    width: 80px;
+    height: 50px;
+    /* background-color:#0000EE ; */
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--first-color-light);
+    transition: 10ms ease-in-out;
+}
+.project__links__btn:hover{
+    background-color: var(--first-color-light);
+    color: #0000EE;
+}
 .project__section__image__container:hover .project__description{
     top: 0;
     /* bottom: 0; */
